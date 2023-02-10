@@ -1,12 +1,16 @@
 #include <stdio.h>
 int main()
 {
-double n,k=1;
-scanf("%lf",&n);
-for (int i = 1; i <= n; i++)
-{
-    k = k * i;
-}
-printf("Factorial of %lf is = %lf",n,k);
-return 0 ;
+    int year;
+    scanf("%d", &year);
+    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
+    {
+        printf("This is leap year\n");
+    }
+    else
+    {
+        printf("This is not leap year\n");
+    }
+
+    return 0;
 }
