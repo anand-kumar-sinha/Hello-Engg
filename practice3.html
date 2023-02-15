@@ -91,7 +91,7 @@
 
 
                     <p class="fw-semibold">
-                        <strong> &#9762 Write a program add Natural numbers :</strong>
+                        <strong> &#9762 Write a program if the given number is palindrome or not : </strong>
                     </p>
                     <div class="card" style="width: 100%;">
                         <div class="card-body">
@@ -102,14 +102,25 @@
 #include <span><</span>stdio.h>
 int main()
 {
-int n,k=0;
-scanf("%d",&n);
-for (int i = 1; i <= n; i++)
-{
-    k = k+i;
-}
-printf("Sum of %d Natural number is = %d",n,k);
-return 0 ;
+    int num, b, sum = 0, temp;
+    scanf("%d", &num);
+    temp = num;
+    for (int i = 0; num != 0; i++)
+    {
+        b = num % 10;
+        num = num / 10;
+        sum = (sum * 10) + b;
+    }
+    if (sum == temp)
+    {
+        printf("This number is palindrome\n");
+    }
+    else
+    {
+        printf("This number is not palindrome\n");
+    }
+
+    return 0;
 }
                             </pre>
                         </div>
@@ -126,9 +137,15 @@ return 0 ;
                             <h5 class="card-title">
                                 OUTPUT:
                             </h5>
-                            <pre>
-100
-Sum of 100 Natural number is = 5050
+                            <p><strong>case 1:</strong></p>
+                                <pre>
+12321
+This number is palindrome
+                            </pre>
+                                <p><strong>case 2:</strong></p>
+                                <pre>
+123456
+This number is not palindrome
                             </pre>
                         </div>
                     </div>
@@ -140,7 +157,7 @@ Sum of 100 Natural number is = 5050
 
                     <div class="my-4">
                         <p class="fw-semibold">
-                            <strong> &#9762 Write a program find factorial of given number :</strong>
+                            <strong> &#9762 Write a program to find fibonacchi series :</strong>
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
@@ -151,14 +168,19 @@ Sum of 100 Natural number is = 5050
 #include <span><</span>stdio.h>
 int main()
 {
-double n,k=1;
-scanf("%lf",&n);
-for (int i = 1; i <= n; i++)
-{
-    k = k * i;
-}
-printf("Factorial of %lf is = %lf",n,k);
-return 0 ;
+    int num;
+    scanf("%d", &num);
+    int  a1 = 0, a2 = 1, sum;
+    printf("%d %d ", a1, a2);
+    for (int i = 2; i < num; i++)
+    {
+        sum = a1 + a2;
+        printf("%d ", sum);
+        a1 = a2;
+        a2 = sum;
+    }
+
+    return 0;
 }
                             </pre>
                             </div>
@@ -177,16 +199,13 @@ return 0 ;
                                 </h5>
                                 <p><strong>case 1:</strong></p>
                                 <pre>
-15
-Factorial of 15.000000 is = 1307674368000.000000
-
+10
+0 1 1 2 3 5 8 13 21 34
                             </pre>
-                            <p><strong>case 2:</strong></p>
+                                <p><strong>case 2:</strong></p>
                                 <pre>
-50
-Factorial of 50.000000 is = 30414093201713376000000000000000000000000000000000000000000000000.000000
-(Factorial of 50.000000 is = 3.04141e+064)
-
+20
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
                             </pre>
                             </div>
                         </div>
@@ -199,7 +218,7 @@ Factorial of 50.000000 is = 3041409320171337600000000000000000000000000000000000
 
                     <div class="my-4">
                         <p class="fw-semibold">
-                            <strong> &#9762 Write a program to calculate leap year</strong>
+                            <strong> &#9762 Write a program to find given number is prime or not:</strong>
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
@@ -210,18 +229,35 @@ Factorial of 50.000000 is = 3041409320171337600000000000000000000000000000000000
 #include <span><</span>stdio.h>
 int main()
 {
-int year;
-scanf("%d", &year);
-if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
-{
-    printf("This is leap year\n");
-}
-else
-{
-    printf("This is not leap year\n");
-}
+    int num;
+    scanf("%d", &num);
+    if (num == 1)
+    {
+        printf("This is not prime number\n");
+    }
+    else if (num ==2)
+    {
+        printf("This is prime number\n");
+    }
+    
+    else
+    {
+        for (int i = 2; i < num; i++)
+        {
+            if (num % i == 0)
+            {
+                printf("This is not prime number\n");
+                break;
+            }
+            else
+            {
+                printf("This is prime number\n");
+                break;
+            }
+        }
+    }
 
-return 0;
+    return 0;
 }
                             </pre>
                             </div>
@@ -240,136 +276,19 @@ return 0;
                                 </h5>
                                 <p><strong>case 1:</strong></p>
                                 <pre>
-1700
-This is not leap year
+6
+This is not prime number
                             </pre>
-                            <p><strong>case 2:</strong></p>
+                                <p><strong>case 2:</strong></p>
                                 <pre>
-2000
-This is leap year
-
+2
+This is prime number
                             </pre>
                             </div>
                         </div>
                     </div>
 
                     <!-- 3rd card output end  -->
-
-
-
-                    <!-- 4th card start -->
-
-                    <div class="my-4">
-                        <p class="fw-semibold">
-                            <strong> &#9762 Write a program to print 
-                                exponential of a number</strong>
-                        </p>
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Program:
-                                </h5>
-                                <pre>
-#include <span><</span>stdio.h>
-int main()
-{
-    int num, power, j = 1;
-    scanf("%d %d", &num, &power);
-    for (int i = 1; i <= power; i++)
-    {
-        j = j * num;
-    }
-    printf("%d", j);
-    return 0;
-}
-                            </pre>
-                            </div>
-                        </div>
-
-
-                        <!-- 4th card end  -->
-
-
-                        <!-- 4th card output start -->
-
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    OUTPUT:
-                                </h5>
-                                <p><strong>case 1:</strong></p>
-                                <pre>
-4
-4
-256
-                            </pre>
-                            <p><strong>case 2:</strong></p>
-                                <pre>
-5
-5
-3125
-                            </pre>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 4th card output end  -->
-
-                    <!-- 5th card start -->
-
-                    <div class="my-4">
-                        <p class="fw-semibold">
-                            <strong> &#9762 Write a program to print reverse a number</strong>
-                        </p>
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Program:
-                                </h5>
-                                <pre>
-#include <span><</span>stdio.h>
-{
-    int num, b;
-    scanf("%d", &num);
-    for (int i = 0; num != 0; i++)
-    {
-        b = num % 10;
-        num = num / 10;
-        printf("%d", b);
-    }
-
-    return 0;
-}
-                            </pre>
-                            </div>
-                        </div>
-
-
-                        <!-- 5th card end  -->
-
-
-                        <!-- 5th card output start -->
-
-                        <div class="card" style="width: 100%;">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    OUTPUT:
-                                </h5>
-                                <p><strong>case 1:</strong></p>
-                                <pre>
-123456
-654321
-                            </pre>
-                            <p><strong>case 2:</strong></p>
-                                <pre>
-112233
-332211
-                            </pre>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 5th card output end  -->
 
 
 
@@ -384,12 +303,12 @@ int main()
                     <button type="button" class="btn btn-outline-success disabled ">
                          << Previous</button></a>
                 <a href="practice.html">
-                    <button type="button" class="btn btn-outline-success">
+                    <button type="button" class="btn btn-outline-success active ">
                          1</button></a>
-                <a href="practice2.html"><button type="button" class="btn btn-outline-success active">
+                <a href="practice2.html"><button type="button" class="btn btn-outline-success">
                         2
                         </button></a>
-                <a href="practice3.html"><button type="button" class="btn btn-outline-success ">
+                <a href="practice3.html"><button type="button" class="btn btn-outline-success disabled">
                         3
                         </button></a>
                 <a href=""><button type="button" class="btn btn-outline-success disabled">
@@ -398,7 +317,7 @@ int main()
             </div>
         </div>
 
-        
+
         <!-- page jumper is stopped -->
 
 

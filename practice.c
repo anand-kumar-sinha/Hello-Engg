@@ -2,12 +2,33 @@
 #include <stdio.h>
 int main()
 {
-    int num, power, j = 1;
-    scanf("%d %d", &num, &power);
-    for (int i = 1; i <= power; i++)
+    int num;
+    scanf("%d", &num);
+    if (num == 1)
     {
-        j = j * num;
+        printf("This is not prime number\n");
     }
-    printf("%d", j);
+    else if (num ==2)
+    {
+        printf("This is prime number\n");
+    }
+    
+    else
+    {
+        for (int i = 2; i < num; i++)
+        {
+            if (num % i == 0)
+            {
+                printf("This is not prime number\n");
+                break;
+            }
+            else
+            {
+                printf("This is prime number\n");
+                break;
+            }
+        }
+    }
+
     return 0;
 }
