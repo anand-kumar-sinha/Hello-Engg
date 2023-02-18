@@ -1,13 +1,15 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 int main()
 {
     int num, k;
-    scanf("%d", &num);
+    cout << "Enter the number" << endl;
+    cin >> num;
     for (int i = 0; num != 0; i++)
     {
         k = num % 10;
         num = num / 10;
-        printf("%d", k);
+        cout << k;
     }
 
     return 0;

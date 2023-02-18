@@ -95,23 +95,103 @@
                     </p>
                     <div class="card" style="width: 100%;">
                         <div class="card-body">
-                            <h5 class="card-title">
-                                Program:
-                            </h5>
-                            <pre>
-#include <span><</span>stdio.h>
+
+                <!-- ------------------------------ C -------------------------------------    -->
+                            <p>
+                                <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                    C
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample">
+                                <div class="card card-body">
+                                    <h5 class="card-title">
+                                        Program:
+                                    </h5>
+                                    <pre>
+        #include <span><</span>stdio.h>
+        int main()
+        {
+            int a;
+            int b;
+            printf("Enter the two numbers\n");
+            scanf("%d %d",&a,&b);
+            printf("sum of two number is = %d",a+b);
+            return 0;
+        }
+                                    </pre>
+                                </div>
+                            </div>
+
+
+
+                <!-- ------------------------------ C ++ -------------------------------------    -->
+
+
+
+                            <p>
+                                <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample2" aria-expanded="false"
+                                    aria-controls="collapseExample2">
+                                    C++
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample2">
+                                <div class="card card-body">
+                                    <h5 class="card-title">
+                                        Program:
+                                    </h5>
+                                    <pre>
+#include <span><</span>iostream>
+using namespace std;
 int main()
 {
-    int a;
-    int b;
-    printf("Enter the two numbers\n");
-    scanf("%d %d",&a,&b);
-    printf("sum of two number is = %d",a+b);
+    int a, b;
+    cout << "Enter the two numbers" << endl;
+    cin >> a >> b;
+    cout << "Sum of two number is = " << a + b << endl;
     return 0;
 }
-                            </pre>
+                                    </pre>
+                                </div>
+                            </div>
+
+
+                <!-- ------------------------------ JAVA -------------------------------------    -->
+
+
+                            <p>
+                                <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseExample3" aria-expanded="false"
+                                    aria-controls="collapseExample3">
+                                    JAVA
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapseExample3">
+                                <div class="card card-body">
+                                    <h5 class="card-title">
+                                        Program:
+                                    </h5>
+                                    <pre>
+import java.util.Scanner;
+
+public class Sum {
+    public static void main(String[] args) {
+        int a,b;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the two numbers");
+        a = in.nextInt();
+        b = in.nextInt();
+        System.out.println("Sum of two number is = " + (a+b));
+    }
+}
+                                    </pre>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
 
 
                     <!-- 1st card end  -->
@@ -144,40 +224,160 @@ sum of two number is = 5
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    Program:
-                                </h5>
-                                <pre>
-#include <span><</span>stdio.h>
-    int main()
-    {
-        int a,b,c,d;
-        printf("enter your number \n");
-        scanf("%d", &a);
-        printf("enter your number \n");
-        scanf("%d", &b);
-        printf("enter your number \n");
-        scanf("%d", &c);
-        printf("enter your number \n");
-        scanf("%d", &d);
-        if ((a > b) && (a > c) && (a > d)){
-            printf("The greatest number is = %d",a);
-        }
-        if ((b > a) && (b > c) && (b > d)){
-            printf("The greatest number is = %d",b);
-        }
-        if ((c > b) && (c > a) && (c > d)){
-            printf("The greatest number is = %d",c);
-        }
-        if ((d > b) && (d > c) && (d > a)){
-            printf("The greatest number is = %d",d);
-        }
 
-        return 0;
+                <!-- ------------------------------ C -------------------------------------    -->
+                <p>
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample4" aria-expanded="false"
+                        aria-controls="collapseExample4">
+                        C
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample4">
+                    <div class="card card-body">
+                        <h5 class="card-title">
+                            Program:
+                        </h5>
+                        <pre>
+#include <span><</span>stdio.h>
+int main()
+{
+    int a,b,c,d;
+    printf("enter your number \n");
+    scanf("%d", &a);
+    printf("enter your number \n");
+    scanf("%d", &b);
+    printf("enter your number \n");
+    scanf("%d", &c);
+    printf("enter your number \n");
+    scanf("%d", &d);
+    if ((a > b) && (a > c) && (a > d)){
+        printf("The greatest number is = %d",a);
     }
-                            </pre>
-                            </div>
-                        </div>
+    if ((b > a) && (b > c) && (b > d)){
+        printf("The greatest number is = %d",b);
+    }
+    if ((c > b) && (c > a) && (c > d)){
+        printf("The greatest number is = %d",c);
+    }
+    if ((d > b) && (d > c) && (d > a)){
+        printf("The greatest number is = %d",d);
+    }
+                        
+    return 0;
+}
+                        </pre>
+                    </div>
+                </div>
+
+
+
+    <!-- ------------------------------ C ++ -------------------------------------    -->
+
+
+
+                <p>
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample5" aria-expanded="false"
+                        aria-controls="collapseExample5">
+                        C++
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample5">
+                    <div class="card card-body">
+                        <h5 class="card-title">
+                            Program:
+                        </h5>
+                        <pre>
+#include <span><</span>iostream>
+using namespace std;
+int main()
+{
+    int a, b, c, d;
+    cout << "enter your number" << endl;
+    cin >> a;
+    cout << "enter your number" << endl;
+    cin >> b;
+    cout << "enter your number" << endl;
+    cin >> c;
+    cout << "enter your number" << endl;
+    cin >> d;
+    if ((a > b) && (a > c) && (a > d))
+    {
+        cout << "The greatest number is = " << a << endl;
+    }
+    if ((b > a) && (b > c) && (b > d))
+    {
+        cout << "The greatest number is = " << b << endl;
+    }
+    if ((c > b) && (c > a) && (c > d))
+    {
+        cout << "The greatest number is = " << c << endl;
+    }
+    if ((d > b) && (d > c) && (d > a))
+    {
+        cout << "The greatest number is = " << d << endl;
+    }
+    return 0;
+}
+                        </pre>
+                    </div>
+                </div>
+
+
+    <!-- ------------------------------ JAVA -------------------------------------    -->
+
+
+                <p>
+                    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample6" aria-expanded="false"
+                        aria-controls="collapseExample6">
+                        JAVA
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample6">
+                    <div class="card card-body">
+                        <h5 class="card-title">
+                            Program:
+                        </h5>
+                        <pre>
+import java.util.Scanner;
+
+public class GreatestNumber {
+    public static void main(String[] args) {
+        int a,b,c,d;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your numbers");
+        a = in.nextInt();
+        System.out.println("Enter your numbers");
+        b = in.nextInt();
+        System.out.println("Enter your numbers");
+        c = in.nextInt();
+        System.out.println("Enter your numbers");
+        d = in.nextInt();
+        if ((a > b) && (a > c) && (a > d))
+        {
+            System.out.println("The greatest number is = " + a);
+        }
+        if ((b > a) && (b > c) && (b > d))
+        {
+            System.out.println("The greatest number is = " + b);
+        }
+        if ((c > b) && (c > a) && (c > d))
+        {
+            System.out.println("The greatest number is = " + c);
+        }
+        if ((d > b) && (d > c) && (d > a))
+        {
+            System.out.println("The greatest number is = " + d);
+        }
+    }
+}
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
                         <!-- 2st card end  -->
@@ -217,28 +417,123 @@ The greatest number is = 18
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    Program:
-                                </h5>
-                                <pre>
+                                
+ <!-- ------------------------------ C -------------------------------------    -->
+ <p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample7" aria-expanded="false"
+        aria-controls="collapseExample7">
+        C
+    </button>
+</p>
+<div class="collapse" id="collapseExample7">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
 #include <span><</span>stdio.h>
 int main()
 {
 int a;
-printf("Enter the number \n");
+printf("Enter the number \n")
 scanf("%d",&a);
 if(a % 2 == 0)
 {
-    printf("%d is even",a);
+    printf("%d is even \n",a);
 }
-else{
+else
+{
     printf("%d is odd",a);
 }
-return 0 ;
+return 0;
 }
-                            </pre>
-                            </div>
-                        </div>
+        </pre>
+    </div>
+</div>
+
+
+
+<!-- ------------------------------ C ++ -------------------------------------    -->
+
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample8" aria-expanded="false"
+        aria-controls="collapseExample8">
+        C++
+    </button>
+</p>
+<div class="collapse" id="collapseExample8">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+#include <span><</span>iostream>
+using namespace std;
+int main()
+{
+    int a;
+    cout << "Enter the number" << endl;
+    cin >> a;
+    if (a % 2 == 0)
+    {
+        cout<< a << " is even" << endl;
+    }
+    else
+    {
+        cout << a << " is odd" << endl;
+    }
+    
+    return 0;
+}
+
+        </pre>
+    </div>
+</div>
+
+
+<!-- ------------------------------ JAVA -------------------------------------    -->
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample9" aria-expanded="false"
+        aria-controls="collapseExample9">
+        JAVA
+    </button>
+</p>
+<div class="collapse" id="collapseExample9">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+import java.util.Scanner;
+
+public class EvenOdd {
+    public static void main(String[] args) {
+        int a;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your numbers");
+        a = in.nextInt();
+        if (a % 2 == 0)
+        {
+            System.out.println(a + " is even");
+        }
+        else
+        {
+            System.out.println(a + " is odd");
+        }
+    }
+}
+        </pre>
+    </div>
+</div>
+</div>
+</div>
 
 
                         <!-- 3rd card end  -->
@@ -278,49 +573,179 @@ Enter the number
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    Program:
-                                </h5>
-                                <pre>
+
+<!-- ------------------------------ C -------------------------------------    -->
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample10" aria-expanded="false"
+        aria-controls="collapseExample10">
+        C
+    </button>
+</p>
+<div class="collapse" id="collapseExample10">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
 #include <span><</span>stdio.h>
 int main()
 {
-int math,sci,eng,hindi,ss;
-printf("Enter the marks\n");
-scanf("%d",&math);
-scanf("%d",&sci);
-scanf("%d",&eng);
-scanf("%d",&hindi);
-scanf("%d",&ss);
-int total = math+sci+eng+hindi+ss;
-float per = (float)total/5;
-if(per >= 80 && per <= 100)
-{
-    printf("Your percentrage is: %.2f and your grade is 'A'\n",per);
+    int math, sci, eng, hindi, ss;
+    printf("Enter the marks\n");
+    scanf("%d", &math);
+    scanf("%d", &sci);
+    scanf("%d", &eng);
+    scanf("%d", &hindi);
+    scanf("%d", &ss);
+    int total = math + sci + eng + hindi + ss;
+    float per = (float)total / 5;
+    if (per >= 80 && per <= 100)
+    {
+        printf("Your percentrage is: %.2f and your grade is 'A'\n", per);
+    }
+    else if (per >= 60 && per < 80)
+    {
+        printf("Your percentrage is: %.2f and your grade is 'B'\n", per);
+    }
+    else if (per >= 40 && per < 60)
+    {
+        printf("Your percentrage is: %.2f and your grade is 'c'\n", per);
+    }
+    else if (per > 100)
+    {
+        printf("Please Enter a valid number\n");
+    }
+
+    else
+    {
+        printf("Your percentrage is: %.2f and you are 'fail'\n", per);
+    }
+
+    return 0;
 }
-else if(per >= 60 && per < 80)
+        </pre>
+    </div>
+</div>
+
+
+
+<!-- ------------------------------ C ++ -------------------------------------    -->
+
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample11" aria-expanded="false"
+        aria-controls="collapseExample11">
+        C++
+    </button>
+</p>
+<div class="collapse" id="collapseExample11">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+#include <span><</span>iostream>
+using namespace std;
+
+int main()
 {
-    printf("Your percentrage is: %.2f and your grade is 'B'\n",per);
-}
-else if(per >= 40 && per < 60)
-{
-    printf("Your percentrage is: %.2f and your grade is 'c'\n",per);
-}
-else if (per>100)
-{
-    printf("Please Enter a valid number\n");
+    int math, sci, eng, hindi, ss;
+    cout << "Enter the marks" << endl;
+    cin >> math;
+    cin >> sci;
+    cin >> eng;
+    cin >> hindi;
+    cin >> ss;
+    int total = math + sci + eng + hindi + ss;
+    float per = (float)total / 5;
+    if (per >= 80 && per <= 100)
+    {
+        cout << "Your percentrage is: " << per << " and your grade is 'A'" << endl;
+    }
+    else if (per >= 60 && per < 80)
+    {
+        cout << "Your percentrage is: " << per << " and your grade is 'B'" << endl;
+    }
+    else if (per >= 40 && per < 60)
+    {
+        cout << "Your percentrage is: " << per << " and your grade is 'c'" << endl;
+    }
+    else if (per > 100)
+    {
+        cout << "Please Enter a valid number" << endl;
+    }
+    else
+    {
+        cout << "Your percentrage is: " << per << " and you are 'fail'";
+    }
+
+    return 0;
 }
 
-else 
-{
-    printf("Your percentrage is: %.2f and you are 'fail'\n",per);
-}
+        </pre>
+    </div>
+</div>
 
-return 0;
+
+<!-- ------------------------------ JAVA -------------------------------------    -->
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample12" aria-expanded="false"
+        aria-controls="collapseExample12">
+        JAVA
+    </button>
+</p>
+<div class="collapse" id="collapseExample12">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+import java.util.Scanner;
+public class Percentage {
+    public static void main(String[] args) {
+        int math, sci, eng, hindi, ss;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the marks");
+        math = in.nextInt();
+        sci = in.nextInt();
+        eng = in.nextInt();
+        hindi = in.nextInt();
+        ss = in.nextInt();
+        int total = math + sci + eng + hindi + ss;
+        float per = (float)total / 5;
+        if (per >= 80 && per <= 100)
+        {
+            System.out.println("Your percentrage is: " + per + " and your grade is 'A'");
+        }
+        else if (per >= 60 && per < 80)
+        {
+            System.out.println("Your percentrage is: " + per + " and your grade is 'B'");
+        }
+        else if (per >= 40 && per < 60)
+        {
+            System.out.println("Your percentrage is: " + per + " and your grade is 'C'");
+        }
+        else if (per > 100)
+        {
+            System.out.println("Please Enter a valid number");
+        }
+        else
+        {
+            System.out.println("Your percentrage is: " + per + " and you are 'fail'");
+        }
+    }
 }
-                            </pre>
-                            </div>
-                        </div>
+        </pre>
+    </div>
+</div>
+</div>
+</div>
 
 
                         <!-- 4th card end  -->
@@ -357,25 +782,113 @@ Your percentrage is: 75.20 and your grade is 'B'
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    Program:
-                                </h5>
-                                <pre>
+  
+                               <!-- ------------------------------ C -------------------------------------    -->
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample13" aria-expanded="false"
+        aria-controls="collapseExample13">
+        C
+    </button>
+</p>
+<div class="collapse" id="collapseExample13">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
 #include <span><</span>stdio.h>
 int main()
 {
-int n;
-scanf("%d",&n);
+    int n;
+    printf("Enter the number \n");
+    scanf("%d", &n);
+    for (int i = 1; i <= 10; i++)
+    {
+        printf("%d X %d = %d \n", n, i, n * i);
+    }
 
-for(int i = 1;i <span><= </span>10;i++)
+    return 0;
+}
+        </pre>
+    </div>
+</div>
+
+
+
+<!-- ------------------------------ C ++ -------------------------------------    -->
+
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample14" aria-expanded="false"
+        aria-controls="collapseExample14">
+        C++
+    </button>
+</p>
+<div class="collapse" id="collapseExample14">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+#include <span><</span>iostream>
+
+using namespace std;
+int main()
 {
-    printf("%d X %d = %d\n",n,i,n*i);
+    int n;
+    cout << "Enter the number" << endl;
+    cin >> n;
+    for (int i = 1; i <= 10; i++)
+    {
+        cout << n << " X " << i << " = " << n * i << endl;
+    }
+
+    return 0;
 }
-return 0;
+
+        </pre>
+    </div>
+</div>
+
+
+<!-- ------------------------------ JAVA -------------------------------------    -->
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample15" aria-expanded="false"
+        aria-controls="collapseExample15">
+        JAVA
+    </button>
+</p>
+<div class="collapse" id="collapseExample15">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+import java.util.Scanner;
+
+public class Multi {
+    public static void main(String[] args) {
+        int n;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the number");
+        n = in.nextInt();
+        for (int i = 1; i <= 10; i++)
+        {
+            System.out.println(n + " X " + i + " = " + (n*i));
+        }
+    }
 }
-                            </pre>
-                            </div>
-                        </div>
+        </pre>
+    </div>
+</div>
+</div>
+</div>
 
 
                         <!-- 5th card end  -->
@@ -416,19 +929,19 @@ return 0;
             <div class="container text text-center">
                 <a href="">
                     <button type="button" class="btn btn-outline-success disabled ">
-                         << Previous</button></a>
+                        << Previous</button></a>
                 <a href="practice.html">
                     <button type="button" class="btn btn-outline-success active ">
-                         1</button></a>
+                        1</button></a>
                 <a href="practice2.html"><button type="button" class="btn btn-outline-success">
                         2
-                        </button></a>
+                    </button></a>
                 <a href="practice3.html"><button type="button" class="btn btn-outline-success ">
                         3
-                        </button></a>
+                    </button></a>
                 <a href=""><button type="button" class="btn btn-outline-success disabled">
                         Next>>
-                        </button></a>
+                    </button></a>
             </div>
         </div>
 
