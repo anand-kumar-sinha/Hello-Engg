@@ -95,23 +95,38 @@
                     </p>
                     <div class="card" style="width: 100%;">
                         <div class="card-body">
-                            <h5 class="card-title">
-                                Program:
-                            </h5>
-                            <pre>
+
+
+                            <!-- ------------------------------ C -------------------------------------    -->
+
+
+
+ <p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample1" aria-expanded="false"
+        aria-controls="collapseExample1">
+        C
+    </button>
+</p>
+<div class="collapse" id="collapseExample1">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
 #include <span><</span>stdio.h>
 int main()
 {
-    int num, b, sum = 0, temp;
+    int num, k, temp, sum = 0;
     scanf("%d", &num);
     temp = num;
     for (int i = 0; num != 0; i++)
     {
-        b = num % 10;
+        k = num % 10;
         num = num / 10;
-        sum = (sum * 10) + b;
+        sum = (sum * 10) + k;
     }
-    if (sum == temp)
+    if (temp == sum)
     {
         printf("This number is palindrome\n");
     }
@@ -121,10 +136,107 @@ int main()
     }
 
     return 0;
+
+        </pre>
+    </div>
+</div>
+
+
+
+<!-- ------------------------------ C ++ -------------------------------------    -->
+
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample2" aria-expanded="false"
+        aria-controls="collapseExample2">
+        C++
+    </button>
+</p>
+<div class="collapse" id="collapseExample2">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+#include <span><</span>iostream>
+using namespace std;
+int main()
+{
+    int num, k, temp, sum = 0;
+    cout << "Enter the number" << endl;
+    cin >> num;
+    temp = num;
+    for (int i = 0; num != 0; i++)
+    {
+        k = num % 10;
+        num = num / 10;
+        sum = (sum * 10) + k;
+    }
+    if (temp == sum)
+    {
+        cout << "This number is palindrome" << endl;
+    }
+    else
+    {
+        cout << "This number is not palindrome" << endl;
+    }
+
+    return 0;
 }
-                            </pre>
-                        </div>
-                    </div>
+
+        </pre>
+    </div>
+</div>
+
+
+<!-- ------------------------------ JAVA -------------------------------------    -->
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample3" aria-expanded="false"
+        aria-controls="collapseExample3">
+        JAVA
+    </button>
+</p>
+<div class="collapse" id="collapseExample3">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+import java.util.Scanner;
+
+public class Palindrome {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num,k,temp,sum = 0;
+        System.out.println("Enter the number");
+        num = in.nextInt();
+        temp = num;
+        for (int i = 0; num != 0; i++)
+        {
+            k = num % 10;
+            num = num / 10;
+            sum = (sum * 10) + k;
+        }
+        if (temp == sum)
+        {
+            System.out.println("This number is palindrome");
+        }
+        else
+        {
+            System.out.println("This number is not palindrome");
+        }
+    }
+}
+        </pre>
+    </div>
+</div>
+</div>
+</div>
 
 
                     <!-- 1st card end  -->
@@ -161,30 +273,126 @@ This number is not palindrome
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    Program:
-                                </h5>
-                                <pre>
+                                
+
+                            <!-- ------------------------------ C -------------------------------------    -->
+
+
+
+ <p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample4" aria-expanded="false"
+        aria-controls="collapseExample4">
+        C
+    </button>
+</p>
+<div class="collapse" id="collapseExample4">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
 #include <span><</span>stdio.h>
 int main()
 {
-    int num;
-    scanf("%d", &num);
-    int  a1 = 0, a2 = 1, sum;
-    printf("%d %d ", a1, a2);
+    int n, a = 0, b = 1, sum;
+    printf("Enter the number\n");
+    scanf("%d", &n);
+    for (int i = 2; i < n; i++)
+    {
+        sum = a + b;
+        a = b;
+        b = sum;
+    }
+    printf("%d", sum);
+    return 0;
+}
+
+        </pre>
+    </div>
+</div>
+
+
+
+<!-- ------------------------------ C ++ -------------------------------------    -->
+
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample5" aria-expanded="false"
+        aria-controls="collapseExample5">
+        C++
+    </button>
+</p>
+<div class="collapse" id="collapseExample5">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+#include <span><</span>iostream>
+using namespace std;
+int main()
+{
+    int num, a = 0, b = 1, sum;
+    cout << "Enter the number" << endl;
+    cin >> num;
     for (int i = 2; i < num; i++)
     {
-        sum = a1 + a2;
-        printf("%d ", sum);
-        a1 = a2;
-        a2 = sum;
+        sum = a + b;
+        a = b;
+        b = sum;
     }
+    cout << sum << endl;
 
     return 0;
 }
-                            </pre>
-                            </div>
-                        </div>
+
+        </pre>
+    </div>
+</div>
+
+
+<!-- ------------------------------ JAVA -------------------------------------    -->
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample6" aria-expanded="false"
+        aria-controls="collapseExample6">
+        JAVA
+    </button>
+</p>
+<div class="collapse" id="collapseExample6">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num,a = 0,b = 1,sum = 0;
+        System.out.println("Enter the number");
+        num = in.nextInt();
+        for (int i = 2; i < num; i++)
+        {
+            sum = a + b;
+            a = b;
+            b = sum;
+        }
+        System.out.println(sum);
+
+    }
+}
+        </pre>
+    </div>
+</div>
+</div>
+</div>
 
 
                         <!-- 2st card end  -->
@@ -222,46 +430,168 @@ int main()
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
-                                <h5 class="card-title">
-                                    Program:
-                                </h5>
-                                <pre>
+                                 
+
+                            <!-- ------------------------------ C -------------------------------------    -->
+
+
+
+ <p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample7" aria-expanded="false"
+        aria-controls="collapseExample7">
+        C
+    </button>
+</p>
+<div class="collapse" id="collapseExample7">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
 #include <span><</span>stdio.h>
 int main()
 {
     int num;
+    printf("Enter the number\n");
     scanf("%d", &num);
     if (num == 1)
     {
         printf("This is not prime number\n");
     }
-    else if (num ==2)
+    else if (num == 2)
     {
         printf("This is prime number\n");
     }
-    
-    else
+    for (int i = 2; i < num; i++)
     {
-        for (int i = 2; i < num; i++)
+        if (num % i == 0)
         {
-            if (num % i == 0)
-            {
-                printf("This is not prime number\n");
-                break;
-            }
-            else
-            {
-                printf("This is prime number\n");
-                break;
-            }
+            printf("This is not prime number\n");
+            break;
+        }
+        else
+        {
+            printf("This is prime nubmer\n");
+            break;
         }
     }
 
     return 0;
 }
-                            </pre>
-                            </div>
-                        </div>
+
+        </pre>
+    </div>
+</div>
+
+
+
+<!-- ------------------------------ C ++ -------------------------------------    -->
+
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample8" aria-expanded="false"
+        aria-controls="collapseExample8">
+        C++
+    </button>
+</p>
+<div class="collapse" id="collapseExample8">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+#include <span><</span>iostream>
+using namespace std;
+int main()
+{
+    int num, a = 0, b = 1, sum;
+    cout << "Enter the number" << endl;
+    cin >> num;
+    if (num == 1)
+    {
+        cout << "This is not prime number" << endl;
+    }
+    else if (num == 2)
+    {
+        cout << "This number is prime number" << endl;
+    }
+    for (int i = 2; i < num; i++)
+    {
+        if (num % i == 0)
+        {
+            cout << "This is not prime number" << endl;
+            break;
+        }
+        else
+        {
+            cout << "This is prime number" << endl;
+            break;
+        }
+    }
+
+    return 0;
+}
+
+        </pre>
+    </div>
+</div>
+
+
+<!-- ------------------------------ JAVA -------------------------------------    -->
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample9" aria-expanded="false"
+        aria-controls="collapseExample9">
+        JAVA
+    </button>
+</p>
+<div class="collapse" id="collapseExample9">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int num;
+        System.out.println("Enter the number");
+        num = in.nextInt();
+        if (num == 1)
+        {
+            System.out.println("This  is not prime number");
+        }
+        else if (num == 2)
+        {
+            System.out.println("This is prime number");
+        }
+        for (int i = 2; i < num; i++)
+        {
+            if (num % i == 0)
+            {
+                System.out.println("This is not prime number");
+                break;
+            }
+            else
+            {
+                System.out.println("This is prime number");
+                break;
+            }
+        }
+    }
+}
+        </pre>
+    </div>
+</div>
+</div>
+</div>
 
 
                         <!-- 3rd card end  -->
