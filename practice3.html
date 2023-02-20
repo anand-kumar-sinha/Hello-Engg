@@ -622,6 +622,165 @@ This is prime number
 
 
 
+                    <!-- 4th card start -->
+
+                    <div class="my-4">
+                        <p class="fw-semibold">
+                            <strong> &#9762 Write a program to find sum of given digit:</strong>
+                        </p>
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                                 
+
+                            <!-- ------------------------------ C -------------------------------------    -->
+
+
+
+ <p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample10" aria-expanded="false"
+        aria-controls="collapseExample10">
+        C
+    </button>
+</p>
+<div class="collapse" id="collapseExample10">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+#include <span><</span>stdio.h>
+int main()
+{
+    int num, k = 0, sum = 0;
+    printf("Enter the number\n");
+    scanf("%d", &num);
+    for (int i = 0; num != 0; i++)
+    {
+        k = num % 10;
+        num = num / 10;
+        sum = sum + k;
+    }
+    printf("%d", sum);
+
+    return 0;
+}
+
+        </pre>
+    </div>
+</div>
+
+
+
+<!-- ------------------------------ C ++ -------------------------------------    -->
+
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample11" aria-expanded="false"
+        aria-controls="collapseExample11">
+        C++
+    </button>
+</p>
+<div class="collapse" id="collapseExample11">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+#include <span><</span>iostream>
+using namespace std;
+int main()
+{
+    int num, b = 0, sum = 0;
+    cout << "Enter the number" << endl;
+    cin >> num;
+    for (int i = 0; num != 0; i++)
+    {
+        b = num % 10;
+        num = num / 10;
+        sum = sum + b;
+    }
+    cout << sum << endl;
+
+    return 0;
+}
+
+        </pre>
+    </div>
+</div>
+
+
+<!-- ------------------------------ JAVA -------------------------------------    -->
+
+
+<p>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample12" aria-expanded="false"
+        aria-controls="collapseExample12">
+        JAVA
+    </button>
+</p>
+<div class="collapse" id="collapseExample12">
+    <div class="card card-body">
+        <h5 class="card-title">
+            Program:
+        </h5>
+        <pre>
+            import java.util.Scanner;
+
+            public class Main {
+                public static void main(String[] args) {
+                    int num, b = 0, sum = 0;
+                    System.out.println("Enter the number");
+                    Scanner in = new Scanner(System.in);
+                    num = in.nextInt();
+                    for (int i = 0; num != 0; i++){
+                        b = num % 10;
+                        num = num / 10;
+                        sum = sum + b;
+                    }
+                    System.out.println(sum);
+                }
+            }
+        </pre>
+    </div>
+</div>
+</div>
+</div>
+
+
+                        <!-- 3rd card end  -->
+
+
+                        <!-- 3rd card output start -->
+
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    OUTPUT:
+                                </h5>
+                                <p><strong>case 1:</strong></p>
+                                <pre>
+Enter your number
+123
+6
+                            </pre>
+                                <p><strong>case 2:</strong></p>
+                                <pre>
+Enter your number
+456
+15
+                            </pre>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3rd card output end  -->
+
+
+
                 </div>
             </div>
 

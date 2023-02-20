@@ -1,30 +1,16 @@
 #include <stdio.h>
 int main()
 {
-    int num;
+    int num, k = 0, sum = 0;
     printf("Enter the number\n");
     scanf("%d", &num);
-    if (num == 1)
+    for (int i = 0; num != 0; i++)
     {
-        printf("This is not prime number\n");
+        k = num % 10;
+        num = num / 10;
+        sum = sum + k;
     }
-    else if (num == 2)
-    {
-        printf("This is prime number\n");
-    }
-    for (int i = 2; i < num; i++)
-    {
-        if (num % i == 0)
-        {
-            printf("This is not prime number\n");
-            break;
-        }
-        else
-        {
-            printf("This is prime nubmer\n");
-            break;
-        }
-    }
+    printf("%d", sum);
 
     return 0;
 }
