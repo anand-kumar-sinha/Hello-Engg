@@ -4,13 +4,20 @@ int main()
 {
     int n;
     cin >> n;
-    int l = (2 * n) - 1;
-    int k = n - 1;
-    for (int i = 1; i < n; i++)
+    int k = 2 * n - 1;
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j < l; j++)
+        for (int j = 1; j <= k; j++)
         {
-            if (i <= j && j <= i + k)
+            if (i == 1 && j <= n)
+            {
+                cout << "*";
+            }
+            else if (i == n && j >= n && j <= k)
+            {
+                cout << "*";
+            }
+            else if (j == i || j == n - 1 + i)
             {
                 cout << "*";
             }

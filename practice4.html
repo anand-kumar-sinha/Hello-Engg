@@ -505,7 +505,7 @@ public class Main {
 
                     <div class="my-4">
                         <p class="fw-semibold">
-                            <strong> &#9762 Hollow Rhombus Star Pattern </strong>
+                            <strong> &#9762 Draw Hollow Rhombus Star Pattern </strong>
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
@@ -727,7 +727,7 @@ public class Main {
 
                     <div class="my-4">
                         <p class="fw-semibold">
-                            <strong> &#9762 Mirrod Rhombus Star Pattern</strong>
+                            <strong> &#9762 Draw Mirrod Rhombus Star Pattern</strong>
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
@@ -927,7 +927,7 @@ public class Main {
 
                     <div class="my-4">
                         <p class="fw-semibold">
-                            <strong> &#9762 Draw square Star pattern</strong>
+                            <strong> &#9762 Draw Hallow Mirrored Rhombus Star Pattern </strong>
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
@@ -955,14 +955,31 @@ int main()
 {
     int n;
     scanf("%d", &n);
+    int k = 2 * n - 1;
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n; j++)
+        for (int j = 1; j <= k; j++)
         {
-            printf("*");
+            if ( i == 1 && j <= n)
+            {
+                printf("*");
+            }
+            else if (i == n && j >= n && j <= k)
+            {
+                printf("*");
+            }
+            else if (j == i || j == n - 1 + i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
         }
         printf("\n");
     }
+
     return 0;
 }
 
@@ -994,15 +1011,32 @@ using namespace std;
 int main()
 {
     int n;
-    cin>>n;
+    cin >> n;
+    int k = 2 * n - 1;
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n; j++)
+        for (int j = 1; j <= k; j++)
         {
-            printf("*");
+            if (i == 1 && j <= n)
+            {
+                cout << "*";
+            }
+            else if (i == n && j >= n && j <= k)
+            {
+                cout << "*";
+            }
+            else if (j == i || j == n - 1 + i)
+            {
+                cout << "*";
+            }
+            else
+            {
+                cout << " ";
+            }
         }
-        printf("\n");
+        cout << endl;
     }
+
     return 0;
 }
 
@@ -1034,11 +1068,27 @@ public class Main {
         int n;
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
+        int k = 2 * n - 1;
         for (int i = 1; i <= n; i++)
         {
-            for (int j = 1; j <= n; j++)
+            for (int j = 1; j <= k; j++)
             {
-                System.out.print("*");
+                if (i == 1 && j <= n)
+                {
+                    System.out.print("*");
+                }
+                else if (i == n && j >= n && j <= k)
+                {
+                    System.out.print("*");
+                }
+                else if (j == i || j == n - 1 + i)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
             }
             System.out.println("");
         }
@@ -1063,24 +1113,26 @@ public class Main {
                                 </h5>
                                 <p><strong>case 1:</strong></p>
                                 <pre>
-6
-******
-******
-******
-******
-******
-******
+8
+********       
+ *      *      
+  *      *     
+   *      *    
+    *      *   
+     *      *  
+      *      * 
+       ********
                             </pre>
                                 <p><strong>case 2:</strong></p>
                                 <pre>
 7
-*******
-*******
-*******
-*******
-*******
-*******
-*******
+*******      
+ *     *     
+  *     *    
+   *     *   
+    *     *  
+     *     * 
+      *******
                             </pre>
                             </div>
                         </div>
