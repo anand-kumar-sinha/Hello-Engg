@@ -1,16 +1,26 @@
 #include <stdio.h>
 int main()
 {
-    int num, k = 0, sum = 0;
-    printf("Enter the number\n");
-    scanf("%d", &num);
-    for (int i = 0; num != 0; i++)
+int n;
+scanf("%d",&n);
+int l = (2*n)-1;
+int k = n-1;
+for (int i = 1; i < n; i++)
+{
+    for (int j = 1; j < l; j++)
     {
-        k = num % 10;
-        num = num / 10;
-        sum = sum + k;
+        if (i <= j && j <= i+k)
+        {
+            printf("*");
+            
+        }
+        else{
+            printf(" ");
+        }
+        
     }
-    printf("%d", sum);
+    printf("\n");
+}
 
-    return 0;
+return 0 ;
 }
