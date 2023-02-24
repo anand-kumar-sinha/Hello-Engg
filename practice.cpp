@@ -4,23 +4,19 @@ int main()
 {
     int n;
     cin >> n;
-    int k = 2 * n - 1;
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= k; j++)
+        for (int j = 1; j <= n; j++)
         {
-            if (i == 1 && j <= n)
+            if (j == n + 1 - i || j == n)
             {
                 cout << "*";
             }
-            else if (i == n && j >= n && j <= k)
+            else if (i == n)
             {
                 cout << "*";
             }
-            else if (j == i || j == n - 1 + i)
-            {
-                cout << "*";
-            }
+
             else
             {
                 cout << " ";
