@@ -91,7 +91,7 @@
 
 
                     <p class="fw-semibold">
-                        <strong> &#9762 Draw Hollow Square Star Pattern with Diagonal</strong>
+                        <strong> &#9762 Draw Hollow Inverted Mirrored Right Triangle Star Pattern </strong>
                     </p>
                     <div class="card" style="width: 100%;">
                         <div class="card-body">
@@ -127,11 +127,7 @@ for (int i = 1; i <= n; i++)
         {
             printf("*");
         }
-        else if (j == 1 || i == j || j == n+1-i || j == n)
-        {
-            printf("*");
-        }
-        else if (i == n)
+        else if (j == 1 || j == n+1-i)
         {
             printf("*");
         }
@@ -172,35 +168,32 @@ return 0 ;
 #include <span><</span>iostream>
 #include <iostream>
 using namespace std;
+using namespace std;
 int main()
 {
-    int n;
-    cin >> n;
-    for (int i = 1; i <= n; i++)
+int n;
+cin >> n;
+for (int i = 1; i <= n; i++)
+{
+    for (int j = 1; j <= n; j++)
     {
-        for (int j = 1; j <= n; j++)
+        if (i == 1)
         {
-            if (i == 1)
-            {
-                cout << "*";
-            }
-            else if (j == 1 || i == j || j == n + 1 - i || j == n)
-            {
-                cout << "*";
-            }
-            else if (i == n)
-            {
-                cout << "*";
-            }
-            else
-            {
-                cout << " ";
-            }
+            cout << "*";
         }
-        cout << "\n";
+        else if (j == 1 || j == n+1-i)
+        {
+            printf("*");
+        }
+        else
+        {
+            cout << " ";
+        }
     }
+    cout << endl;
+}
 
-    return 0;
+return 0 ;
 }
 
         </pre>
@@ -235,16 +228,10 @@ public class Main {
         {
             for (int j = 1; j <= n; j++)
             {
-                if (i == 1)
-                {
+                if (i == 1) {
                     System.out.print("*");
                 }
-                else if (j == 1 || i == j || j == n + 1 - i || j == n)
-                {
-                    System.out.print("*");
-                }
-                else if (i == n)
-                {
+                else if (j == 1 || j == n+1-i){
                     System.out.print("*");
                 }
                 else
@@ -275,33 +262,27 @@ public class Main {
                             </h5>
                             <p><strong>case 1:</strong></p>
                                 <pre>
-10                                   
+7
+*******
+*    *
+*   *
+*  *
+* *
+**
+*
+<p><strong>case 2:</strong></p>
+<pre>
+10
 **********
-**      **
-* *    * *
-*  *  *  *
-*   **   *
-*   **   *
-*  *  *  *
-* *    * *
-**      **
-**********
-                            </pre>
-                                <p><strong>case 2:</strong></p>
-                                <pre>
-11
-***********
-**       **
-* *     * *
-*  *   *  *
-*   * *   *
-*    *    *
-*   * *   *
-*  *   *  *
-* *     * *
-**       **
-***********
-                                    
+*       *
+*      *
+*     *
+*    *
+*   *
+*  *
+* *
+**
+*                              
                             </pre>
                         </div>
                     </div>
@@ -313,7 +294,7 @@ public class Main {
 
                     <div class="my-4">
                         <p class="fw-semibold">
-                            <strong> &#9762 Draw Rhombus Star Pattern </strong>
+                            <strong> &#9762 Draw Inverted Right Triangle Star Pattern </strong>
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
@@ -339,25 +320,25 @@ public class Main {
 #include <span><</span>stdio.h>
 int main()
 {
-int n,k;
-scanf("%d",&n);
-k = (n*2)-1;
-for (int i = 1; i <= n; i++)
-{
-    for (int j = 1; j <= k ; j++)
+    int n;
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
     {
-        if (j >= (n+1-i)  && j <= (n*2)-i)
+        for (int j = 1; j <= n; j++)
         {
-            printf("*");
+            if (j >= 1 && j <= n + 1 - i)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
         }
-        else{
-            printf(" ");
-        }
+        printf("\n");
     }
-    printf("\n");
-}
 
-return 0 ;
+    return 0;
 }
 
         </pre>
@@ -387,14 +368,14 @@ return 0 ;
 using namespace std;
 int main()
 {
-int n,k;
-cin>>n;
-k = (n*2)-1;
-for (int i = 1; i <= n; i++)
+int n;
+cin >> n;
+int k = n+1;
+for (int i = 0; i <= n; i++)
 {
-    for (int j = 1; j <= k ; j++)
+    for (int j = 0; j <= n; j++)
     {
-        if (j >= (n+1-i)  && j <= (n*2)-i)
+        if (j >= 1 && j <= n+1-i)
         {
             cout << "*";
         }
@@ -436,12 +417,12 @@ public class Main {
         int n,k;
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
-        k = 2*n-1;
+        k = n+1;
         for (int i = 1; i <= n; i++)
         {
-            for (int j = 1; j <= k; j++)
+            for (int j = 1; j <= n; j++)
             {
-                if (j >= (n + 1 - i) && j <= (n * 2) - i)
+                if (j >= 1 && j <= n+1-i)
                 {
                     System.out.print("*");
                 }
@@ -474,25 +455,27 @@ public class Main {
                                 <p><strong>case 1:</strong></p>
                                 <pre>
 7
-      *******
-     ******* 
-    *******  
-   *******   
-  *******    
- *******     
-******* 
+*******
+******
+*****
+****
+***
+**
+*
                             </pre>
                                 <p><strong>case 2:</strong></p>
                                 <pre>
-8
-       ********
-      ******** 
-     ********  
-    ********   
-   ********    
-  ********     
- ********      
+10
+**********
+*********
 ********
+*******
+******
+*****
+****
+***
+**
+*
                             </pre>
                             </div>
                         </div>
@@ -505,7 +488,7 @@ public class Main {
 
                     <div class="my-4">
                         <p class="fw-semibold">
-                            <strong> &#9762 Draw Hollow Rhombus Star Pattern </strong>
+                            <strong> &#9762 Draw Inverted Mirrored Right Triangle Star Pattern </strong>
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
@@ -529,38 +512,30 @@ public class Main {
         </h5>
         <pre>
 #include <span><</span>stdio.h>
-int main()
-{
-int n;
-scanf("%d",&n);
-int k = 2*n-1;
-for (int i = 1; i <= n; i++)
-{
-    for (int j = 1; j <= k; j++)
+#include <stdio.h>
+    int main()
     {
-        if (i == 1 && j >= n)
+        int n;
+        scanf("%d", &n);
+        for (int i = 1; i <= n; i++)
         {
-            printf("*");
+            for (int j = 1; j <= n; j++)
+            {
+                if (j >= i)
+                {
+                    printf("*");
+                }
+                else
+                {
+                    printf(" ");
+                }
+    
+            }
+            printf("\n");
         }
-        else if (j == n+1-i || j == 2*n-i)
-        {
-            printf("*");
-        }
-        else if (i == n && j <= n)
-        {
-            printf("*");
-        }
-        else
-        {
-            printf(" ");
-        }
-        
+    
+        return 0;
     }
-    printf("\n");
-}
-
-return 0 ;
-}
 
         </pre>
     </div>
@@ -591,28 +566,18 @@ int main()
 {
 int n;
 cin >> n;
-int k = 2*n-1;
 for (int i = 1; i <= n; i++)
 {
-    for (int j = 1; j <= k; j++)
+    for (int j = 1; j <= n; j++)
     {
-        if (i == 1 && j >= n)
+        if (j >= i)
         {
-            cout << "*";
-        }
-        else if (j == n+1-i || j == 2*n-i)
-        {
-            cout << "*";
-        }
-        else if (i == n && j <= n)
-        {
-            cout << "*";
+        cout << "*"
         }
         else
         {
-            cout << " ";
+        cout << " "
         }
-        
     }
     cout << endl;
 }
@@ -648,20 +613,11 @@ public class Main {
         int n;
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
-        int k = 2*n-1;
         for (int i = 1; i <= n; i++)
         {
-            for (int j = 1; j <= k; j++)
+            for (int j = 1; j <= n; j++)
             {
-                if (i == 1 && j >= n)
-                {
-                    System.out.print("*");
-                }
-                else if (j == n+1-i || j == 2*n-i)
-                {
-                    System.out.print("*");
-                }
-                else if (i == n && j <= n)
+                if (j >= i)
                 {
                     System.out.print("*");
                 }
@@ -695,25 +651,27 @@ public class Main {
                                 <p><strong>case 1:</strong></p>
                                 <pre>
 7
-      *******
-     *     * 
-    *     *  
-   *     *   
-  *     *    
- *     *     
 *******
+ ******
+  *****
+   ****
+    ***
+     **
+      *
                             </pre>
                                 <p><strong>case 2:</strong></p>
                                 <pre>
-8
-       ********
-      *      * 
-     *      *  
-    *      *   
-   *      *    
-  *      *     
- *      *      
-******** 
+10
+**********
+ *********
+  ********
+   *******
+    ******
+     *****
+      ****
+       ***
+        **
+         *
                             </pre>
                             </div>
                         </div>
@@ -727,7 +685,7 @@ public class Main {
 
                     <div class="my-4">
                         <p class="fw-semibold">
-                            <strong> &#9762 Draw Mirrod Rhombus Star Pattern</strong>
+                            <strong> &#9762 Draw Hollow Square Star Pattern </strong>
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
@@ -753,28 +711,29 @@ public class Main {
 #include <span><</span>stdio.h>
 int main()
 {
-int n;
-scanf("%d",&n);
-int l = (2*n)-1;
-int k = n-1;
-for (int i = 1; i < n; i++)
-{
-    for (int j = 1; j < l; j++)
+    int n;
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
     {
-        if (i <= j && j <= i+k)
+        for (int j = 1; j <= n; j++)
         {
-            printf("*");
-            
+            if (i == 1 || i == n)
+            {
+                printf("*");
+            }
+            else if (j == 1 || j == n)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
         }
-        else{
-            printf(" ");
-        }
-        
+        printf("\n");
     }
-    printf("\n");
-}
 
-return 0 ;
+    return 0;
 }
 
         </pre>
@@ -804,28 +763,30 @@ return 0 ;
 using namespace std;
 int main()
 {
-int n;
-cin >> n;
-int l = (2*n)-1;
-int k = n-1;
-for (int i = 1; i < n; i++)
-{
-    for (int j = 1; j < l; j++)
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++)
     {
-        if (i <= j && j <= i+k)
+        for (int j = 1; j <= n; j++)
         {
-            cout << "*";
-            
-        }
-        else{
-            cout << " ";
-        }
-        
-    }
-    cout << endl;
-}
+            if (i == 1 || i == n)
+            {
+                cout << "*";
+            }
+            else if (j == 1 || j == n)
+            {
+                cout << "*";
+            }
 
-return 0 ;
+            else
+            {
+                cout << " ";
+            }
+        }
+        cout << endl;
+    }
+
+    return 0;
 }
 
         </pre>
@@ -856,16 +817,19 @@ public class Main {
         int n;
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
-        int l = (2 * n) - 1;
-        int k = n - 1;
-        for (int i = 1; i < n; i++)
+        for (int i = 1; i <= n; i++)
         {
-            for (int j = 1; j < l; j++)
+            for (int j = 1; j <= n; j++)
             {
-                if (i <= j && j <= i + k)
+                if (i == 1 || i == n)
                 {
                     System.out.print("*");
                 }
+                else if (j == 1 || j == n)
+                {
+                    System.out.print("*");
+                }
+
                 else
                 {
                     System.out.print(" ");
@@ -894,24 +858,28 @@ public class Main {
                                 </h5>
                                 <p><strong>case 1:</strong></p>
                                 <pre>
-7                                   
-*******     
- *******    
-  *******   
-   *******  
-    ******* 
-     *******
+7
+*******
+*     *
+*     *
+*     *
+*     *
+*     *
+*******
                             </pre>
                                 <p><strong>case 2:</strong></p>
                                 <pre>
-8                                   
-********      
- ********     
-  ********    
-   ********   
-    ********  
-     ******** 
-      ********
+10
+**********
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+*        *
+**********
                             </pre>
                             </div>
                         </div>
@@ -927,7 +895,7 @@ public class Main {
 
                     <div class="my-4">
                         <p class="fw-semibold">
-                            <strong> &#9762 Draw Hallow Mirrored Rhombus Star Pattern </strong>
+                            <strong> &#9762 Draw Pyramid Star Pattern </strong>
                         </p>
                         <div class="card" style="width: 100%;">
                             <div class="card-body">
@@ -951,37 +919,32 @@ public class Main {
         </h5>
         <pre>
 #include <span><</span>stdio.h>
-int main()
-{
-    int n;
-    scanf("%d", &n);
-    int k = 2 * n - 1;
-    for (int i = 1; i <= n; i++)
+#include <stdio.h>
+    int main()
     {
-        for (int j = 1; j <= k; j++)
+        int n;
+        scanf("%d", &n);
+        int k, l;
+        k = n + 1;
+        l = n - 1;
+        for (int i = 1; i <= n; i++)
         {
-            if ( i == 1 && j <= n)
+            for (int j = 1; j <= ((n*2)-1); j++)
             {
-                printf("*");
+                if ((j >= (k - i)) && (j <= (l + i)))
+                {
+                    printf("*");
+                }
+                else
+                {
+                    printf(" ");
+                }
             }
-            else if (i == n && j >= n && j <= k)
-            {
-                printf("*");
-            }
-            else if (j == i || j == n - 1 + i)
-            {
-                printf("*");
-            }
-            else
-            {
-                printf(" ");
-            }
+            printf("\n");
         }
-        printf("\n");
+    
+        return 0;
     }
-
-    return 0;
-}
 
         </pre>
     </div>
@@ -1012,20 +975,14 @@ int main()
 {
     int n;
     cin >> n;
-    int k = 2 * n - 1;
+    int k, l;
+    k = n + 1;
+    l = n - 1;
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= k; j++)
+        for (int j = 1; j <= n; j++)
         {
-            if (i == 1 && j <= n)
-            {
-                cout << "*";
-            }
-            else if (i == n && j >= n && j <= k)
-            {
-                cout << "*";
-            }
-            else if (j == i || j == n - 1 + i)
+            if ((j >= (k - i)) && (j <= (l + i)))
             {
                 cout << "*";
             }
@@ -1068,20 +1025,14 @@ public class Main {
         int n;
         Scanner in = new Scanner(System.in);
         n = in.nextInt();
-        int k = 2 * n - 1;
+        int k, l;
+        k = n + 1;
+        l = n - 1;
         for (int i = 1; i <= n; i++)
         {
-            for (int j = 1; j <= k; j++)
+            for (int j = 1; j <= n; j++)
             {
-                if (i == 1 && j <= n)
-                {
-                    System.out.print("*");
-                }
-                else if (i == n && j >= n && j <= k)
-                {
-                    System.out.print("*");
-                }
-                else if (j == i || j == n - 1 + i)
+                if ((j >= (k - i)) && (j <= (l + i)))
                 {
                     System.out.print("*");
                 }
@@ -1113,26 +1064,28 @@ public class Main {
                                 </h5>
                                 <p><strong>case 1:</strong></p>
                                 <pre>
-8
-********       
- *      *      
-  *      *     
-   *      *    
-    *      *   
-     *      *  
-      *      * 
-       ********
+      7
+      *
+     ***
+    *****
+   *******
+  *********
+ ***********
+*************
                             </pre>
                                 <p><strong>case 2:</strong></p>
                                 <pre>
-7
-*******      
- *     *     
-  *     *    
-   *     *   
-    *     *  
-     *     * 
+         10
+         *
+        ***
+       *****
       *******
+     *********
+    ***********
+   *************
+  ***************
+ *****************
+*******************
                             </pre>
                             </div>
                         </div>
@@ -1149,19 +1102,19 @@ public class Main {
 
 
             <div class="container text text-center">
-                <a href="practice.html">
+                <a href="practice4.html">
                     <button type="button" class="btn btn-outline-success  ">
                          << Previous</button></a>
-                <a href="practice4.html">
+                <a href="practice7.html">
                     <button type="button" class="btn btn-outline-success active">
-                         4</button></a>
-                <a href="practice5.html"><button type="button" class="btn btn-outline-success">
-                        5
+                         7</button></a>
+                <a href="practice8.html"><button type="button" class="btn btn-outline-success ">
+                        8
                         </button></a>
-                <a href="practice6.html"><button type="button" class="btn btn-outline-success ">
-                        6
+                <a href="practice9.html"><button type="button" class="btn btn-outline-success">
+                        9
                         </button></a>
-                <a href="practice7.html"><button type="button" class="btn btn-outline-success ">
+                <a href=""><button type="button" class="btn btn-outline-success disabled">
                         Next>>
                         </button></a>
             </div>
