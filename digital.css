@@ -1,0 +1,16 @@
+body{
+    background: #535151;
+}
+.main{
+    background-color: rgb(199, 197, 197);
+    width: 75vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 12.5vw;
+    margin-top: 25vh;
+}
+
+#date{
+    margin-top:23vh ;
+}
