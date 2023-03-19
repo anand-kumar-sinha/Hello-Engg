@@ -450,35 +450,37 @@ public class Main {
         </h5>
         <pre>
 #include <span><</span>stdio.h>
-int main()
-{
-    int num;
-    printf("Enter the number\n");
-    scanf("%d", &num);
-    if (num == 1)
+    int main()
     {
-        printf("This is not prime number\n");
-    }
-    else if (num == 2)
-    {
-        printf("This is prime number\n");
-    }
-    for (int i = 2; i < num; i++)
-    {
-        if (num % i == 0)
+        int num,k = 0;
+        printf("Enter the number\n");
+        scanf("%d", &num);
+        if (num == 1)
         {
             printf("This is not prime number\n");
-            break;
         }
-        else
+        for (int i = 1; i <= num; i++)
         {
-            printf("This is prime nubmer\n");
-            break;
+            if (num % i == 0)
+            {
+                k++;   
+            }
+            if(k >= 3)
+            {
+                break;
+            }
         }
+        if (k > 2)
+        {
+            printf("This is not prime number\n");
+        }
+        else{
+            printf("This is prime number\n");
+        }
+        
+    
+        return 0;
     }
-
-    return 0;
-}
 
         </pre>
     </div>
@@ -511,29 +513,31 @@ int main()
     cout << "Enter the number" << endl;
     cin >> num;
     if (num == 1)
-    {
-        cout << "This is not prime number" << endl;
-    }
-    else if (num == 2)
-    {
-        cout << "This number is prime number" << endl;
-    }
-    for (int i = 2; i < num; i++)
-    {
-        if (num % i == 0)
         {
-            cout << "This is not prime number" << endl;
-            break;
+            cout << "This is not prime number\n" << endl;
         }
-        else
+        for (int i = 1; i <= num; i++)
         {
-            cout << "This is prime number" << endl;
-            break;
+            if (num % i == 0)
+            {
+                k++;   
+            }
+            if(k >= 3)
+            {
+                break;
+            }
         }
+        if (k > 2)
+        {
+            cout << "This is not prime number\n" << endl;
+        }
+        else{
+            cout << "This is prime number\n" << endl;
+        }
+        
+    
+        return 0;
     }
-
-    return 0;
-}
 
         </pre>
     </div>
@@ -561,29 +565,30 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int num;
+        int num,k = 0;
         System.out.println("Enter the number");
         num = in.nextInt();
         if (num == 1)
         {
             System.out.println("This  is not prime number");
         }
-        else if (num == 2)
-        {
-            System.out.println("This is prime number");
-        }
-        for (int i = 2; i < num; i++)
+        for (int i = 1; i <= num; i++)
         {
             if (num % i == 0)
             {
-                System.out.println("This is not prime number");
-                break;
+                k++:
             }
-            else
+            if(k >= 3)
             {
-                System.out.println("This is prime number");
                 break;
             }
+        }
+        if (k > 2)
+        {
+            System.out.println("This is not prime number\n");
+        }
+        else{
+            System.out.println("This is prime number\n");
         }
     }
 }
