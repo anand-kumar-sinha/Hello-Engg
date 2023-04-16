@@ -1,26 +1,32 @@
 #include <stdio.h>
 int main()
 {
-int n;
-scanf("%d",&n);
-int l = (2*n)-1;
-int k = n-1;
-for (int i = 1; i < n; i++)
-{
-    for (int j = 1; j < l; j++)
+    int num,k = 0;
+    printf("Enter the number\n");
+    scanf("%d", &num);
+    if (num == 1)
     {
-        if (i <= j && j <= i+k)
-        {
-            printf("*");
-            
-        }
-        else{
-            printf(" ");
-        }
-        
+        printf("This is not prime number\n");
     }
-    printf("\n");
-}
+    for (int i = 1; i <= num; i++)
+    {
+        if (num % i == 0)
+        {
+            k++;   
+        }
+        if(k >= 3)
+        {
+            break;
+        }
+    }
+    if (k > 2)
+    {
+        printf("This is not prime number\n");
+    }
+    else{
+        printf("This is prime number\n");
+    }
+    
 
-return 0 ;
+    return 0;
 }
