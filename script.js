@@ -13,17 +13,11 @@ let song =
 
         { songName: "Angreji Beat International Villager", filePath: "song/Angreji Beat International Villager 320 Kbps.mp3", coverPath: "covers/1 (3).jpg" },
 
-        { songName: "Beautiful International Villager", filePath: " song/Beautiful International Villager 320 Kbps.mp3", coverPath: "covers/1 (4).jpg" },
-
         { songName: "Birthday Bash Dilliwaali Zaalim Girlfriend", filePath: "song/Birthday Bash Dilliwaali Zaalim Girlfriend 320 Kbps.mp3 ", coverPath: "covers/1 (5).jpg" },
 
-        { songName: "Boom Boom Yo Yo Honey Singh", filePath: "song/Boom Boom Yo Yo Honey Singh 320 Kbps.mp3 ", coverPath: "covers/never.jpg" },
+        { songName: "Kon hai wo kon hai", filePath: "song/bollywood_Baahubali - Kaun Hain Voh.mp3", coverPath: "covers/1 (6).jpg" },
 
-        { songName: "Boom Boom Yo Yo Honey Singh", filePath: "song/Boom Boom Yo Yo Honey Singh 320 Kbps.mp3 ", coverPath: "covers/never.jpg" },
-
-        { songName: "Boom Boom Yo Yo Honey Singh", filePath: "song/Boom Boom Yo Yo Honey Singh 320 Kbps.mp3 ", coverPath: "covers/never.jpg" },
-
-        { songName: "Boom Boom Yo Yo Honey Singh", filePath: "song/Boom Boom Yo Yo Honey Singh 320 Kbps.mp3 ", coverPath: "covers/never.jpg" }
+        { songName: "Needein Khul jaati hai", filePath: "song/Neendein Khul Jaati Hain - Hate Story 3 320 Kbps.mp3", coverPath: "covers/never.jpg" }
 
     ]
 
